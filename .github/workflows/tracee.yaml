@@ -11,16 +11,16 @@ jobs:
 
     - name: Start Tracee profiling in background
       uses: simar7/tracee-action@start
-      with:
-        workdir: "/tmp/tracee"
+#      with:
+#        workdir: "/tmp/tracee"
 
     - name: Simulate work
       run: for i in {1..20}; do sleep 2 && strace ls; done
 
     - name: Stop and Check Tracee results and create a PR
       uses: simar7/tracee-action@stop-and-check
-      with:
-        workdir: "/tmp/tracee"
+#      with:
+#        workdir: "/tmp/tracee"
 
     - name: Show Tracee profile
       run: cat /tmp/tracee/out/tracee.profile
