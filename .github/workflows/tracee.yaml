@@ -17,14 +17,14 @@ jobs:
     - name: Simulate work
       run: for i in {1..20}; do sleep 2 && strace ls; done
 
-    - name: Stop Tracee profiling
-      uses: simar7/tracee-action@stop
+    #    - name: Stop Tracee profiling
+    #      uses: simar7/tracee-action@stop
 
-    - name: Show Tracee profile
-      run: cat /tmp/tracee/out/tracee.profile
-
-    - name: Compare and create a PR
-      uses: simar7/tracee-action@create-pr
+    - name: Stop and Check Tracee results and create a PR
+      uses: simar7/tracee-action@stop-and-check
       with:
         workdir: "/tmp/tracee"
         github-auth-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Show Tracee profile
+      run: cat /tmp/tracee/out/tracee.profile
