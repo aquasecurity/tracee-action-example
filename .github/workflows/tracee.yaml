@@ -21,7 +21,7 @@ jobs:
       uses: simar7/tracee-action@stop-and-check
       with:
         workdir: "/tmp/tracee"
-        github-auth-token: ${{ secrets.GITHUB_TOKEN }}
+#        github-auth-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Show Tracee profile
       run: cat /tmp/tracee/out/tracee.profile
