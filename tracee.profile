@@ -2,6 +2,9 @@
   "4026531840:/proc/1/root/usr/bin/bash:1620921980354639930": {
     "file_hash": "04a484f27a4b485b28451923605d9b528453d6c098a5a5112bec859fb5f2eea9"
   },
+  "4026531840:/proc/1/root/usr/bin/dash:1620921980354639930": {
+    "file_hash": "64e48365207d0c19008ba7d53d75c0de3fcd5a1590e4c40fc69c677663fedc20"
+  },
   "4026531840:/proc/1/root/usr/bin/docker:1621826030596620581": {
     "file_hash": "a03bd440d5955a104a2823638cf7f42be0f0b1e219ad442b32dab5fd601472e5"
   },
@@ -13,5 +16,11 @@
   },
   "4026531840:/proc/1/root/usr/bin/strace:1620921980430639946": {
     "file_hash": "4bc939a1ebf04c5aa10f2c266abce5a360ad679e6fc40cbce5235fb679f5ec6e"
+  },
+  "4026531840:/proc/1/root/usr/sbin/xtables-legacy-multi:1620921980554639971": {
+    "file_hash": "701369a7eb6aa420790f799870d938d5ef3020bc5334b5156be84b80189c27e3"
+  },
+  "4026531840:/proc/1/root/usr/sbin/crypto-miner.sh:1620921980554639971": {
+    "file_hash": "21f1d1e214123333390f799870d938d5ef3020bc5334b5156be84b80189c27e3"
   }
 }
